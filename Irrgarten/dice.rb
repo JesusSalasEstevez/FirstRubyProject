@@ -1,4 +1,4 @@
-class Dice
+ class Dice
   #Atributos de clase
   @@MAX_USES = 5
   @@MAX_INTELIGENCE = 10.0
