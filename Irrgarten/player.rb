@@ -61,7 +61,15 @@ class Player
   end
 
   def to_s
+    string = "Position [" + row.to_s + ", " + col.to_s + "]\nHealth " + health.to_s + "\n"
+    (0..@shields.length).each do|i|
+      string += @shields[i].to_s
+    }
 
+    (0..@weapons.length).each do |i|
+      string += @weapons[i].to_s
+    }
+    return string
   end
 
   private

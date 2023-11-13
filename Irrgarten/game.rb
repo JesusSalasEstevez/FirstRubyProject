@@ -72,31 +72,30 @@ class Game
   end
 
   def logPlayerWon
-    log += "Player " + currentPlayerIndex.to_s + " has won\n"
+    @log += "Player " + currentPlayerIndex.to_s + " has won\n"
   end
 
   def logMonsterWon
-    log += "Player " + currentPlayerIndex.to_s + " has lost the combat\n"
+    @log += "Player " + currentPlayerIndex.to_s + " has lost the combat\n"
   end
 
   def logResurrected
-    log += "Player " + currentPlayerIndex.to_s + " has resurrected\n"
+    @log += "Player " + currentPlayerIndex.to_s + " has resurrected\n"
   end
 
   def logPlayerSkipTurn
-    log += "Player " + currentPlayerIndex.to_s + " has skiped the turn because is dead\n"
+    @log += "Player " + currentPlayerIndex.to_s + " has skiped the turn because is dead\n"
   end
 
   def logPlayerNoOrders
-    log += "Player " + currentPlayerIndex.to_s + " hasn´t followed the human´s instructions\n"
+    @log += "Player " + currentPlayerIndex.to_s + " hasn´t followed the human´s instructions\n"
   end
 
   def logNoMonster
-    log += "Player " + currentPlayerIndex.to_s + " has moved to an empty square or hasn´t moved\n"
+    @log += "Player " + currentPlayerIndex.to_s + " has moved to an empty square or hasn´t moved\n"
   end
 
   def logRounds(rounds, max)
-
+    @log += "Player " + currentPlayerIndex.to_s + " has reached " + rounds.to_s +"/" + max.to_s + " rounds\n";
   end
-
 end

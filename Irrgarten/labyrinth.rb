@@ -23,9 +23,11 @@ class Labyrinth
   end
 
   #Metodos
-  #def spreadPlayers(players)
+  def spreadPlayers(players)
+    (0..@MonsterSquare.length).each do |i|
 
-  #end
+    end
+  end
 
   def haveAWinner
 
